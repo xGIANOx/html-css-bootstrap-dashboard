@@ -10,6 +10,10 @@
     overflow-y: auto;
 }
 
+.col{
+    border: 1px dashed;
+}
+
 main{
     height: calc(100vh - 100px);
 }
@@ -60,6 +64,15 @@ nav{
     color: white;
 }
 
+/* content */
+
+.main_nav{
+    background-color: #1b72e8;
+}
+
+.menu_nav_badge{
+    background-color: #165bba;
+}
 
 /* responsive */
 
