@@ -1,15 +1,54 @@
 .debug .my_nav{
-    height: 100px;
+    
     background-color: aqua;
 }
 .debug .my_side{
-    height: calc(100vh - 100px);
+    height: 100vh;
     width: 20%;
     background-color: blueviolet;
 }
 .debug .content{
     width: 80%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     background-color: palegoldenrod;
     overflow-y: auto;
+}
+
+/* utilities */
+
+.max100{
+    max-width: 100%;
+}
+
+/* nav */
+
+
+.fa-bell{
+    color: orange;
+}
+
+.my_bg_lightgray{
+    background-color: lightgrey;
+}
+
+.nav_icons a{
+    color: gray;
+}
+
+/* responsive */
+
+@media screen and (max-width:991px) {
+    .lg_logo,
+    .nav_icons{
+        display: none;
+    }    
+}
+
+@media screen and (min-width:992px){
+  .mobile_logo{
+    display: none;
+  }  
+  .lg_logo{
+    display: inline-block;
+  }
 }
