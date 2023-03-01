@@ -1,18 +1,24 @@
-.debug .my_nav{
-    
-    background-color: aqua;
-}
 .debug .my_side{
-    height: 100vh;
-    width: 20%;
-    background-color: blueviolet;
+    height: calc(100vh - 82px);
+    width: 10%;
+
 }
 .debug .content{
-    width: 80%;
-    height: 100vh;
+    width: 90%;
+    height: calc(100vh - 82px);
     background-color: palegoldenrod;
     overflow-y: auto;
 }
+
+main{
+    height: calc(100vh - 100px);
+}
+/* general */
+
+ul{
+    list-style: none;
+}
+
 
 /* utilities */
 
@@ -22,6 +28,12 @@
 
 /* nav */
 
+nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .fa-bell{
     color: orange;
@@ -35,11 +47,26 @@
     color: gray;
 }
 
+/* side bar */
+
+.my_side{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    background-size: cover;
+}
+
+.sidebar_icons a{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
 /* responsive */
 
 @media screen and (max-width:991px) {
     .lg_logo,
-    .nav_icons{
+    .nav_icons,
+    .menu_lg{
         display: none;
     }    
 }
@@ -51,4 +78,15 @@
   .lg_logo{
     display: inline-block;
   }
+  .sidebar_icons a{
+    font-size: 1rem;
+    color: white;
+}
+.content,
+.my_side{
+    height: calc(100vh - 68px)!important;
+}
+.sidebar_icons span{
+    font-size: 0.75rem;
+}
 }
