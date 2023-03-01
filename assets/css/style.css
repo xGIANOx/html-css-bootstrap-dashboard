@@ -1,0 +1,15 @@
+.debug .my_nav{
+    height: 100px;
+    background-color: aqua;
+}
+.debug .my_side{
+    height: calc(100vh - 100px);
+    width: 20%;
+    background-color: blueviolet;
+}
+.debug .content{
+    width: 80%;
+    height: calc(100vh - 100px);
+    background-color: palegoldenrod;
+    overflow-y: auto;
+}
