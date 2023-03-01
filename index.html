@@ -13,7 +13,7 @@
 
         <nav class="navbar navbar-expand-lg bg-light max100 d-flex g-2 py-3">
 
-            <div class="container-fluid d-flex justify-content-between">
+            <div class="container-fluid d-flex justify-content-between my_bg_white">
 
               <img width="50px" class="max100 mobile_logo" src="./assets/img/mobile-logo.png" alt="">
 
@@ -93,12 +93,60 @@
 
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                ...
-                            </div>
+                                    <h6 class="offcanvas-title text-dark" id="offcanvasRightLabel">
+                                        Inserisci un nuovo studente
+                                    </h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                
+                                <div class="offcanvas-body text-dark">
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <label for="inputName" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="inputName">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label for="inputSurame" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="inputSurname">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label for="inputemail" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="inputAddress2" >
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>Scegli...</option>
+                                              <option>Italia</option>
+                                              <option>Spagna</option>
+                                              <option>Germania</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Cap</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                          </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

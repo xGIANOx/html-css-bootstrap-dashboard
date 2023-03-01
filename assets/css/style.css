@@ -30,6 +30,10 @@ ul{
     max-width: 100%;
 }
 
+.my_bg_white{
+    background-color: white;
+}
+
 /* nav */
 
 nav{
