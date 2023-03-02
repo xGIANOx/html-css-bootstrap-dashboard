@@ -107,6 +107,13 @@ td{
 }
 
 
+/* users */
+
+.list_p,
+.list-group-item{
+    font-size: 0.75rem;
+}
+
 /* responsive */
 
 @media screen and (max-width:768px){
@@ -123,6 +130,9 @@ td{
     } 
     .offcanvas{
         width:100vw !important;   
+    }
+    .todo{
+        order: 3;
     }
 }       
 
@@ -143,5 +153,8 @@ td{
     }
     .sidebar_icons span{
         font-size: 0.75rem;
+    }
+    .users{
+        margin-top: -19rem;
     }
 }
