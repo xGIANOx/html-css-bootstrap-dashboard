@@ -80,30 +80,33 @@ nav{
 
 /* responsive */
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:991px){
     .lg_logo,
     .nav_icons,
     .menu_lg{
         display: none;
-    }    
-}
+    } 
+    .offcanvas{
+        width:100vw !important;   
+    }
+}       
 
 @media screen and (min-width:992px){
-  .mobile_logo{
-    display: none;
-  }  
-  .lg_logo{
-    display: inline-block;
-  }
-  .sidebar_icons a{
-    font-size: 1rem;
-    color: white;
-}
-.content,
-.my_side{
-    height: calc(100vh - 68px)!important;
-}
-.sidebar_icons span{
-    font-size: 0.75rem;
-}
+    .mobile_logo{
+        display: none;
+    }  
+    .lg_logo{
+        display: inline-block;
+    }
+    .sidebar_icons a{
+        font-size: 1rem;
+        color: white;
+    }
+    .content,
+    .my_side{
+        height: calc(100vh - 68px)!important;
+    }
+    .sidebar_icons span{
+        font-size: 0.75rem;
+    }
 }

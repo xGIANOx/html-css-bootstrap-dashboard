@@ -81,75 +81,172 @@
 
 
         </div>
+        <!--/sidebar-->
+
         <div class="content">
             <div class="main_nav container-fluid text-white">
-                <div class="row row-cols-1
-                row-cols-md-3">
+                <div class="row row-cols-1 row-cols-md-3">
                     <div class="col order-md-3">
                         <div class="new_student py-3">
                             Nuovo Studente
 
                             <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
                                 <div class="offcanvas-header">
+
                                     <h6 class="offcanvas-title text-dark" id="offcanvasRightLabel">
                                         Inserisci un nuovo studente
                                     </h6>
+
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
                                 </div>
                                 
                                 <div class="offcanvas-body text-dark">
-                                    <div class="row g-3">
+
+                                    <form class="row g-3 needs-validation" novalidate>
+
                                         <div class="col-6">
-                                            <label for="inputName" class="form-label">Nome</label>
-                                            <input type="text" class="form-control" id="inputName">
+
+                                            <label for="validationCustom01" class="form-label">
+                                                Nome
+                                            </label>
+
+                                            <input type="text" class="form-control" id="validationCustom01" required>
+
+                                            <div class="valid-feedback">
+                                                Ottimo!
+                                            </div>
+
                                         </div>
 
                                         <div class="col-6">
-                                            <label for="inputSurame" class="form-label">Cognome</label>
-                                            <input type="text" class="form-control" id="inputSurname">
+
+                                            <label for="validationCustom02" class="form-label">
+                                                Cognome
+                                            </label>
+
+                                            <input type="text" class="form-control" id="validationCustom02" required>
+
+                                            <div class="valid-feedback">
+                                                Ottimo!
+                                            </div>
+
                                         </div>
 
                                         <div class="col-6">
-                                            <label for="inputemail" class="form-label">Email</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text" id="basic-addon1">@</span>
-                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+
+                                            <label for="validationCustomUsername" class="form-label">
+                                                Email
+                                            </label>
+
+                                            <div class="input-group has-validation">
+
+                                                <span class="input-group-text" id="inputGroupPrepend">
+                                                    @
+                                                </span>
+
+                                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+                                                <div class="invalid-feedback">
+                                                    Inserisci email.
+                                                </div>
+
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
-                                            <label for="inputPassword4" class="form-label">Password</label>
+                                        <div class="col-6">
+
+                                            <label for="inputPassword4" class="form-label">
+                                                Password
+                                            </label>
+
                                             <input type="password" class="form-control" id="inputPassword4">
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <label for="validationCustom03" class="form-label">
+                                                Città
+                                            </label>
+
+                                            <input type="text" class="form-control" id="validationCustom03" required>
+
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-3">
+
+                                            <label for="validationCustom04" class="form-label">Stato</label>
+
+                                            <select class="form-select" id="validationCustom04" required>
+
+                                                <option selected disabled value="">
+                                                    Scegli...
+                                                </option>
+
+                                                <option>Italia</option>
+                                                <option>Spagna</option>
+                                                <option>Germania</option>
+                                            </select>
+
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-3">
+
+                                            <label for="validationCustom05" class="form-label">
+                                                CAP
+                                            </label>
+
+                                            <input type="text" class="form-control" id="validationCustom05" required>
+
+                                            <div class="invalid-feedback">
+                                                Please provide a valid zip.
+                                            </div>
+
                                         </div>
 
                                         <div class="col-12">
-                                            <label for="inputAddress2" class="form-label">Indirizzo</label>
-                                            <input type="text" class="form-control" id="inputAddress2" >
-                                          </div>
-                                          <div class="col-md-6">
-                                            <label for="inputCity" class="form-label">Città</label>
-                                            <input type="text" class="form-control" id="inputCity">
-                                          </div>
-                                          <div class="col-md-4">
-                                            <label for="inputState" class="form-label">Stato</label>
-                                            <select id="inputState" class="form-select">
-                                              <option selected>Scegli...</option>
-                                              <option>Italia</option>
-                                              <option>Spagna</option>
-                                              <option>Germania</option>
-                                            </select>
-                                          </div>
-                                          <div class="col-md-2">
-                                            <label for="inputZip" class="form-label">Cap</label>
-                                            <input type="text" class="form-control" id="inputZip">
-                                          </div>
-                                    </div>
+                                        
+                                            <label for="inputGroupFile02" class="form-label">Foto</label>
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                                
+                                            
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck">
+                                                    Seleziona per proseguire
+                                                </label>
+
+                                                <div class="invalid-feedback">
+                                                    Devi selezionare per preoseguire.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary" type="submit">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="Boolean py-3">
                             <h3>
@@ -182,6 +279,10 @@
                     </div>
                 </div>
             </div>
+            <!--/main nav-->
+
+
+
         </div>
     
 
