@@ -1,9 +1,9 @@
-.debug .my_side{
+.my_side{
     height: calc(100vh - 82px);
     width: 10%;
 
 }
-.debug .content{
+.content{
     width: 90%;
     height: calc(100vh - 82px);
     overflow-y: auto;
@@ -134,7 +134,16 @@ td{
     .todo{
         order: 3;
     }
-}       
+} 
+
+@media screen and (min-width:768px){
+    .new_student{
+        justify-content: flex-end;
+    }
+    .w-inherit{
+        width: inherit;
+    }
+}
 
 @media screen and (min-width:992px){
     .mobile_logo{
@@ -156,5 +165,8 @@ td{
     }
     .users{
         margin-top: -19rem;
+    }
+    .new_student{
+        justify-content: flex-end;
     }
 }

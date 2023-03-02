@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="debug">
+<body>
 
-        <nav class="navbar navbar-expand-lg bg-light max100 d-flex g-2 py-3">
+    <nav class="navbar navbar-expand-lg bg-light max100 d-flex g-2 py-3">
 
             <div class="container-fluid d-flex justify-content-between my_bg_white">
 
@@ -31,17 +31,17 @@
 
               <div class="dropdown ps-2">
 
-                <i class="fa-solid fa-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <i class="fa-solid fa-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
 
               </div>
             </div>
-          </nav>
+    </nav>
     
     <main class="d-flex">
 
@@ -84,9 +84,9 @@
         <!--/sidebar-->
 
         <div class="content">
-            <div class="main_nav container-fluid text-white">
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col order-md-3">
+            <div class="main_nav container-fluid text-white d-flex">
+                <div class="row row-cols-1 row-cols-md-3 w-inherit">
+                    <div class="col order-md-3 d-flex new_student">
                         <div class="new_student py-3">
                             Nuovo Studente
 
@@ -167,7 +167,7 @@
 
                                         </div>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-5">
 
                                             <label for="validationCustom03" class="form-label">
                                                 Città
@@ -181,7 +181,7 @@
 
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-5">
 
                                             <label for="validationCustom04" class="form-label">Stato</label>
 
@@ -202,7 +202,7 @@
 
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
 
                                             <label for="validationCustom05" class="form-label">
                                                 CAP
@@ -627,26 +627,18 @@
                 </div>
             
             </div>
+            <!--/.tables-->
+
 
         </div>
+        <!--/.content-->
+
     
 
     </main>
 
     
 
-
-
-
-
-
-
-
-
-
-
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
 </body>
 </html>
