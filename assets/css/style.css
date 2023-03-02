@@ -40,6 +40,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    overflow: visible;
 }
 
 .fa-bell{
@@ -66,6 +67,14 @@ nav{
     font-size: 1.5rem;
     color: white;
 }
+
+.sidebar_icons li{
+    padding: 0.25rem;
+}
+
+.sidebar_icons ul li:hover {
+    background-color: lightgray;
+  }
 
 /* content */
 
