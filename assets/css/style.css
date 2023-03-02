@@ -97,6 +97,16 @@ th,
 td{
     text-align: center;
 }
+
+/* todo */
+
+.checkbox_item{
+    border: 1px solid lightgray;
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+
 /* responsive */
 
 @media screen and (max-width:768px){
